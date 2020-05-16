@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "381109849886",
+    "firebase_url": "https://rhemahive-a1dcb.firebaseio.com",
+    "project_id": "rhemahive-a1dcb",
+    "storage_bucket": "rhemahive-a1dcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381109849886:android:2d9830d60a5317f1cbc30f",
+        "android_client_info": {
+          "package_name": "com.rhemaapp.rhematech.rhemahive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381109849886-f7lfumcl639kgqjn0ba0k43d1p9igcfj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rhemaapp.rhematech.rhemahive",
+            "certificate_hash": "97374eee1cba001b770aa05e62b5d6cf2eabed82"
+          }
+        },
+        {
+          "client_id": "381109849886-bib3t903er0a0j6mtfptoash4k2il6jc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4QsoGxLu68UG2CwiNoxYsx4P3i-aG3Dk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381109849886-bib3t903er0a0j6mtfptoash4k2il6jc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

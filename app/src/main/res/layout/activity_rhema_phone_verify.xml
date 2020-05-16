@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RhemaHiveViewPackage.RhemaPhoneVerifyActivity">
+
+    <com.rilixtech.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content" />
+
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/phone_number_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/phone_label"
+        android:layout_toRightOf="@id/ccp"
+        android:layout_toEndOf="@id/ccp"
+        android:inputType="phone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:id="@+id/button_verify_sms"
+        android:text = "@string/verify_sms"
+        android:layout_below="@id/phone_number_edt"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:inputType="number"
+        android:layout_below="@id/button_verify_sms"
+        android:id="@+id/code_edt"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_ver_code"
+        android:fontFamily="@font/arbutus_slab"
+        android:layout_below="@id/code_edt"
+        android:layout_margin="8dp"
+        android:text="@string/verify_code"/>
+</RelativeLayout>

@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RhemaHiveViewPackage.RhemaHiveOnboardingPage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/email_hint"
+            android:layout_margin="16dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintTop_toTopOf="@+id/consLay"
+            app:layout_constraintLeft_toLeftOf="@id/consLay"
+            android:id="@+id/back_img"
+            android:src="@drawable/ic_back"/>
+
+
+        <TextView
+            android:id="@+id/tab_gend_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:fontFamily="@font/arbutus_slab"
+            android:shadowColor="#2d000000"
+            android:shadowDy="1"
+            android:text="@string/tap_on_your_gender"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textColor="#353b50"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/consLay"
+            app:layout_constraintLeft_toLeftOf="@id/consLay"
+            app:layout_constraintRight_toRightOf="@id/consLay"
+            app:layout_constraintStart_toStartOf="@id/consLay"
+            app:layout_constraintTop_toBottomOf = "@id/back_img"
+             />
+
+        <RadioGroup
+            android:id="@+id/rad_gend_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/consLay"
+            app:layout_constraintLeft_toLeftOf="@id/consLay"
+            app:layout_constraintRight_toRightOf="@id/consLay"
+            app:layout_constraintStart_toStartOf="@id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/tab_gend_tv">
+
+            <RadioButton
+                android:layout_width="88dp"
+                android:fontFamily="@font/arbutus_slab"
+                android:layout_height="88dp"
+                android:text="@string/male_rad"
+                android:layout_margin="32dp"
+                android:drawableStart="@drawable/user_male"
+                android:drawableLeft="@drawable/user_male"
+                android:gravity="bottom"
+                android:id="@+id/radMale"
+                android:shadowColor="#2d000000"
+                android:shadowDy="1"
+                android:textColor="#353b50"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:layout_width="88dp"
+                android:layout_height="120dp"
+                android:layout_margin="32dp"
+                android:text="@string/female"
+                android:id="@+id/radFemale"
+                android:drawableStart="@drawable/user_female"
+                android:drawableLeft="@drawable/user_female"
+                android:gravity="bottom"
+                android:fontFamily="@font/arbutus_slab"
+                android:shadowColor="#2d000000"
+                android:shadowDy="1"
+                android:textColor="#353b50"
+                android:textSize="12sp" />
+
+        </RadioGroup>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/view2"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginRight="22dp"
+            app:cardCornerRadius="48dp"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            app:layout_constraintLeft_toLeftOf="@id/consLay"
+            app:layout_constraintRight_toLeftOf="@id/upload_lab"
+            app:layout_constraintTop_toBottomOf="@id/rad_gend_group"
+            android:thicknessRatio="1.3"
+            android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/img_upload_user_prof"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/user_dec_label"
+            android:src="@drawable/ic_camera"/>
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/upload_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginRight="22dp"
+            android:fontFamily="@font/arbutus_slab"
+            android:gravity="center"
+            android:shadowColor="#2d000000"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="@string/upload_profile_picture"
+            android:textAlignment="center"
+            android:textColor="#353b50"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/view2"
+            app:layout_constraintRight_toRightOf="@id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/rad_gend_group"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="22dp" />
+
+        <TextView
+            android:id="@+id/tv_fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:fontFamily="@font/arbutus_slab"
+            android:gravity="center_horizontal"
+            android:shadowColor="#2d000000"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="@string/ent_fname"
+            android:textAlignment="center"
+            android:textColor="#353b50"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/consLay"
+            app:layout_constraintRight_toRightOf="@id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/view2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fname_id_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintLeft_toLeftOf="@+id/consLay"
+            app:layout_constraintRight_toRightOf="@+id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/tv_fname">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/appEdtFName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_add_user"
+                android:drawableLeft="@drawable/ic_add_user"
+                android:hint="@string/fname_hint"
+                android:inputType="textAutoComplete" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/tv_lname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:fontFamily="@font/arbutus_slab"
+            android:gravity="center_horizontal"
+            android:shadowColor="#2d000000"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="@string/ent_lname"
+            android:textAlignment="center"
+            android:textColor="#353b50"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/consLay"
+            app:layout_constraintRight_toRightOf="@id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/fname_id_text" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lname_id_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintLeft_toLeftOf="@+id/consLay"
+            app:layout_constraintRight_toRightOf="@+id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/tv_lname">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/appEdtLName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_add_user"
+                android:fontFamily="@font/arbutus_slab"
+                android:drawableLeft="@drawable/ic_add_user"
+                android:hint="@string/lname_hint"
+                android:inputType="textAutoComplete" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/tv_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:fontFamily="@font/arbutus_slab"
+            android:gravity="center_horizontal"
+            android:shadowColor="#2d000000"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="@string/enter_date_of_birth"
+            android:textAlignment="center"
+            android:textColor="#353b50"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/consLay"
+            app:layout_constraintRight_toRightOf="@id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/lname_id_text" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dob_id_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintLeft_toLeftOf="@+id/consLay"
+            app:layout_constraintRight_toRightOf="@+id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/tv_dob">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/appEdtDob"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_dob"
+                android:fontFamily="@font/arbutus_slab"
+                android:drawableLeft="@drawable/ic_dob"
+                android:hint="@string/tap_to_select_dob"
+                android:inputType="textAutoComplete" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/arbutus_slab"
+            android:shadowColor="#2d000000"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="@string/enter_email_address"
+            android:textAlignment="center"
+            android:textColor="#353b50"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/consLay"
+            app:layout_constraintRight_toRightOf="@id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/dob_id_text" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_id_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintLeft_toLeftOf="@+id/consLay"
+            app:layout_constraintRight_toRightOf="@+id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/tv_email">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/appEdtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_email_add"
+                android:drawableLeft="@drawable/ic_email_add"
+                android:fontFamily="@font/arbutus_slab"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:shadowColor="#2d000000"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="@string/enter_phone_number"
+            android:textAlignment="center"
+            android:fontFamily="@font/arbutus_slab"
+            android:textColor="#353b50"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/consLay"
+            app:layout_constraintRight_toRightOf="@id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/email_id_text" />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone_id_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintLeft_toLeftOf="@+id/consLay"
+            app:layout_constraintRight_toRightOf="@+id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/tv_phone">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/appEdtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/arbutus_slab"
+                android:drawableStart="@drawable/ic_cont_phone"
+                android:drawableLeft="@drawable/ic_cont_phone"
+                android:hint="@string/number_samp"
+                android:inputType="phone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/arbutus_slab"
+            android:shadowColor="#2d000000"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="@string/write_a_brief_intro_about_you_below"
+            android:textAlignment="center"
+            android:textColor="#353b50"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/consLay"
+            app:layout_constraintRight_toRightOf="@id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/phone_id_text" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/about_you_id_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintLeft_toLeftOf="@+id/consLay"
+            app:layout_constraintRight_toRightOf="@+id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/tv_about">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/appEdtAbout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_write"
+                android:drawableLeft="@drawable/ic_write"
+                android:fontFamily="@font/arbutus_slab"
+                android:hint="@string/tell_us_about_yourself"
+                android:inputType="textImeMultiLine" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/church_spinner"
+            android:layout_width="match_parent"
+            android:layout_margin="32dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arbutus_slab"
+            app:layout_constraintEnd_toEndOf="@+id/consLay"
+            app:layout_constraintRight_toRightOf="@+id/consLay"
+            app:layout_constraintLeft_toLeftOf="@+id/consLay"
+            app:layout_constraintStart_toStartOf="@+id/consLay"
+            app:layout_constraintTop_toBottomOf="@+id/about_you_id_text"/>
+
+        <Spinner
+            android:id="@+id/church_branch_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            app:layout_constraintEnd_toEndOf="@+id/consLay"
+            android:fontFamily="@font/arbutus_slab"
+            app:layout_constraintRight_toRightOf="@+id/consLay"
+            app:layout_constraintLeft_toLeftOf="@+id/consLay"
+            app:layout_constraintStart_toStartOf="@+id/consLay"
+            app:layout_constraintTop_toBottomOf="@+id/church_spinner" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:shadowColor="#2d000000"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="@string/enter_your_address"
+            android:textAlignment="center"
+            android:textColor="#353b50"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/consLay"
+            app:layout_constraintRight_toRightOf="@id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/church_branch_spinner" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/address_id_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintLeft_toLeftOf="@+id/consLay"
+            app:layout_constraintRight_toRightOf="@+id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/tv_address">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/appEdtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_address"
+                android:fontFamily="@font/arbutus_slab"
+                android:drawableLeft="@drawable/ic_address"
+                android:hint="@string/address_hint"
+                android:inputType="textAutoComplete" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:shadowColor="#2d000000"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="@string/enter_your_city"
+            android:textAlignment="center"
+            android:textColor="#353b50"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/consLay"
+            app:layout_constraintRight_toRightOf="@id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/address_id_text" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/city_id_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintLeft_toLeftOf="@+id/consLay"
+            app:layout_constraintRight_toRightOf="@+id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/tv_city">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/appEdtCity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/arbutus_slab"
+                android:drawableStart="@drawable/ic_address"
+                android:drawableLeft="@drawable/ic_address"
+                android:hint="@string/city_sample"
+                android:inputType="textAutoComplete" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:shadowColor="#2d000000"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="@string/select_country_of_residence"
+            android:fontFamily="@font/arbutus_slab"
+            android:textAlignment="center"
+            android:textColor="#353b50"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/consLay"
+            app:layout_constraintRight_toRightOf="@id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/city_id_text" />
+
+
+        <com.rilixtech.CountryCodePicker
+            android:id="@+id/country_ccp_reg"
+            android:layout_width="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/consLay"
+            app:layout_constraintRight_toRightOf="@id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/tv_country"
+            />
+
+
+        <TextView
+            android:id="@+id/postal_code_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/arbutus_slab"
+            android:shadowColor="#2d000000"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="@string/enter_your_postal_code"
+            android:textAlignment="center"
+            android:textColor="#353b50"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/consLay"
+            app:layout_constraintRight_toRightOf="@id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/country_ccp_reg" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/postal_id_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintLeft_toLeftOf="@+id/consLay"
+            app:layout_constraintRight_toRightOf="@+id/consLay"
+            app:layout_constraintTop_toBottomOf="@id/postal_code_tv">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/appEdtPostal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/arbutus_slab"
+                android:drawableStart="@drawable/ic_address"
+                android:drawableLeft="@drawable/ic_address"
+                android:hint="@string/postal_hint"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/button_onboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:background="@color/com_smart_login_code"
+            android:textColor="@color/design_default_color_surface"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="@string/onboard_user"
+            app:layout_constraintEnd_toEndOf="@+id/consLay"
+            app:layout_constraintStart_toStartOf="@+id/consLay"
+            app:layout_constraintTop_toBottomOf="@+id/postal_id_text" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
+
+

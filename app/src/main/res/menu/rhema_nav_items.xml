@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_message"
+        android:title="@string/chats"
+        android:icon="@drawable/ic_chat_white"/>
+
+    <item
+        android:id="@+id/item_group_chats"
+        android:title="@string/group_chats"
+        android:icon="@drawable/ic_group_chat_white"/>
+
+    <item
+        android:id="@+id/item_starred_chats"
+        android:title="@string/starred_chats"
+        android:icon="@drawable/ic_star_white"/>
+
+    <item
+        android:id="@+id/item_add_chats"
+        android:title="@string/add_friends"
+        android:icon="@drawable/ic_add_chats_white"/>
+
+
+    <!--<item
+        android:id="@+id/item_dashboard"
+        android:title="@string/dashboard_lab"
+        android:icon="@drawable/ic_dashboard"/>-->
+
+</menu>

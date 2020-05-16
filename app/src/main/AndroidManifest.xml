@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rhemaapp.rhematech.rhemahive">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/rhema_logg"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/rhema_logg"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".RhemaHiveViewPackage.RhemaHiveMessagingActivity"></activity>
+        <activity android:name=".RhemaHiveViewPackage.RhemaHiveUserPortalAreaActivity"
+                  android:launchMode="singleTop"/>
+        <activity
+            android:name=".RhemaHiveViewPackage.RhemaHiveChurchPortal"
+            android:label="@string/title_activity_rhema_hive_church_portal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RhemaHiveViewPackage.RhemaHiveUserPortal"
+            android:label="@string/title_activity_rhema_hive_user_portal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RhemaHiveViewPackage.RhemaHiveSignUpActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".RhemaHiveViewPackage.RhemaChurchOnboardingActivity"
+            android:label="Church Admin Onboarding Screen"
+            android:launchMode="singleTop"
+            android:parentActivityName=".RhemaHiveViewPackage.RhemaHiveDecisionActivity"
+            android:theme="@style/AppTheme.NoActionBar2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RhemaHiveViewPackage.RhemaHiveDecisionActivity" />
+            <meta-data
+                android:name="com.rhemaapp.rhematech.rhemahive.RhemaGlideConfig"
+                android:value="GlideModule" />
+        </activity>
+        <activity
+            android:name=".RhemaHiveViewPackage.RhemaHiveDecisionActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar2">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="example.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RhemaHiveViewPackage.RhemaHiveAuthenticateActivity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".RhemaHiveViewPackage.RhemaHiveTermsCondition"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".RhemaHiveViewPackage.RhemaHiveSwipeViewActivity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".RhemaHiveViewPackage.RhemaHiveOnboardingPage"
+            android:label="User Onboarding Screen"
+            android:launchMode="singleTop"
+            android:parentActivityName=".RhemaHiveViewPackage.RhemaHiveDecisionActivity"
+            android:theme="@style/AppTheme.NoActionBar2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RhemaHiveViewPackage.RhemaHiveDecisionActivity" />
+            <meta-data
+                android:name="com.rhemaapp.rhematech.rhemahive.RhemaGlideConfig"
+                android:value="GlideModule" />
+        </activity>
+        <activity android:name=".RhemaHiveViewPackage.RhemaPhoneVerifyActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/AppTheme.NoActionBar2" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

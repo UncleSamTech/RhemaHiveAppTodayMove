@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RhemaHiveViewPackage.RhemaChurchOnboardingActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/constr_church_reg"
+    >
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintRight_toLeftOf="@+id/view3"
+        android:contentDescription="@string/email_hint"
+        android:layout_margin="18dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="@+id/constr_church_reg"
+        app:layout_constraintLeft_toLeftOf="@id/constr_church_reg"
+        android:id="@+id/back_img_church"
+        android:src="@drawable/ic_back"/>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/view3"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="48dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        app:layout_constraintLeft_toRightOf="@id/back_img_church"
+        app:layout_constraintRight_toLeftOf="@id/upload_lab"
+        app:layout_constraintTop_toTopOf="@id/constr_church_reg"
+        android:thicknessRatio="1.3"
+        android:layout_alignParentStart="true">
+
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/ic_camera"
+        android:id="@+id/img_upload_ico"
+        android:scaleType = "fitCenter"
+        android:contentDescription="@string/user_dec_label"
+        />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/upload_church_picture"
+        android:textSize="14sp"
+        android:id="@+id/upload_lab"
+        android:shadowColor="#2d000000"
+        android:shadowDy="1"
+        android:fontFamily="@font/arbutus_slab"
+        android:shadowRadius="2"
+        android:textColor="#353b50"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        app:layout_constraintLeft_toRightOf="@id/view3"
+        app:layout_constraintRight_toRightOf="@id/constr_church_reg"
+        app:layout_constraintTop_toTopOf="@id/constr_church_reg"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="@string/enter_church_name"
+        android:textSize="14sp"
+        android:id="@+id/church_name_lab"
+        android:shadowColor="#2d000000"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textColor="#353b50"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        app:layout_constraintLeft_toLeftOf="@id/constr_church_reg"
+        app:layout_constraintRight_toRightOf="@id/constr_church_reg"
+        app:layout_constraintTop_toBottomOf="@id/view3"
+         />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/constr_church_reg"
+        app:layout_constraintRight_toRightOf="@+id/constr_church_reg"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/churchname_id_text"
+        app:layout_constraintTop_toBottomOf="@id/church_name_lab">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/church_icon"
+            android:fontFamily="@font/arbutus_slab"
+            android:inputType="textAutoComplete"
+            android:id="@+id/appEdtChurchName"
+            android:hint="@string/church_name"
+            android:drawableLeft="@drawable/church_icon"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/enter_church_address"
+        android:textSize="14sp"
+        android:id="@+id/church_addr_lab"
+        android:shadowColor="#2d000000"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textColor="#353b50"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        app:layout_constraintLeft_toLeftOf="@id/constr_church_reg"
+        app:layout_constraintRight_toRightOf="@id/constr_church_reg"
+        app:layout_constraintTop_toBottomOf="@id/churchname_id_text"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/constr_church_reg"
+        app:layout_constraintRight_toRightOf="@+id/constr_church_reg"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/church_loc_id_text"
+        app:layout_constraintTop_toBottomOf="@id/church_addr_lab">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/ic_address"
+            android:inputType="textAutoComplete"
+            android:id="@+id/appEdtChurchAddr"
+            android:fontFamily="@font/arbutus_slab"
+            android:hint="@string/church_loc_addr"
+            android:drawableLeft="@drawable/ic_address"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop = "16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/enter_church_phone_no"
+        android:fontFamily="@font/arbutus_slab"
+        android:textSize="14sp"
+        android:id="@+id/church_contno_lab"
+        android:shadowColor="#2d000000"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textColor="#353b50"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        app:layout_constraintLeft_toLeftOf="@id/constr_church_reg"
+        app:layout_constraintRight_toRightOf="@id/constr_church_reg"
+        app:layout_constraintTop_toBottomOf="@id/church_loc_id_text"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/constr_church_reg"
+        app:layout_constraintRight_toRightOf="@+id/constr_church_reg"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/churchcontno_text"
+        app:layout_constraintTop_toBottomOf="@id/church_contno_lab">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/ic_cont_phone"
+            android:inputType="phone"
+            android:fontFamily="@font/arbutus_slab"
+            android:hint="@string/church_phone_no"
+            android:id="@+id/appEdtChurchPhone"
+            android:drawableLeft="@drawable/ic_cont_phone"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop = "16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/enter_church_leaders_name"
+        android:textSize="14sp"
+        android:id="@+id/church_leadname_lab"
+        android:shadowColor="#2d000000"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textColor="#353b50"
+        android:textAlignment="center"
+        android:fontFamily="@font/arbutus_slab"
+        android:gravity="center_horizontal"
+        app:layout_constraintLeft_toLeftOf="@id/constr_church_reg"
+        app:layout_constraintRight_toRightOf="@id/constr_church_reg"
+        app:layout_constraintTop_toBottomOf="@id/churchcontno_text"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/constr_church_reg"
+        app:layout_constraintRight_toRightOf="@+id/constr_church_reg"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/churchleadname_text"
+        app:layout_constraintTop_toBottomOf="@id/church_leadname_lab">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:drawableStart="@drawable/user_church_icon"
+        android:fontFamily="@font/arbutus_slab"
+        android:id="@+id/appEdtleadName"
+        android:inputType="textAutoComplete"
+        android:hint="@string/church_minister_evangelist_pastor_bishop_g_o"
+        android:drawableLeft="@drawable/user_church_icon"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop = "16dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:layout_marginBottom="16dp"
+        android:text="@string/enter_church_email_address"
+        android:textSize="14sp"
+        android:id="@+id/church_emailadd_lab"
+        android:shadowColor="#2d000000"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textColor="#353b50"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        app:layout_constraintLeft_toLeftOf="@id/constr_church_reg"
+        app:layout_constraintRight_toRightOf="@id/constr_church_reg"
+        app:layout_constraintTop_toBottomOf="@id/churchleadname_text"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/constr_church_reg"
+        app:layout_constraintRight_toRightOf="@+id/constr_church_reg"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/churchemailadd_text"
+        app:layout_constraintTop_toBottomOf="@id/church_emailadd_lab">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/ic_email_add"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/arbutus_slab"
+            android:id="@+id/appEdtChurchEmail"
+            android:hint="@string/email_hint"
+            android:drawableLeft="@drawable/ic_email_add"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop = "16dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:layout_marginBottom="16dp"
+        android:text="@string/enter_church_description"
+        android:textSize="14sp"
+        android:id="@+id/church_descr_lab"
+        android:shadowColor="#2d000000"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textColor="#353b50"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        app:layout_constraintLeft_toLeftOf="@id/constr_church_reg"
+        app:layout_constraintRight_toRightOf="@id/constr_church_reg"
+        app:layout_constraintTop_toBottomOf="@id/churchemailadd_text"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/constr_church_reg"
+        app:layout_constraintRight_toRightOf="@+id/constr_church_reg"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/churchdescr_text"
+        app:layout_constraintTop_toBottomOf="@id/church_descr_lab">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/ic_write"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/arbutus_slab"
+            android:id="@+id/appEdtChurchDescr"
+            android:hint="@string/write_a_brief_intro_about_the_church"
+            android:drawableLeft="@drawable/ic_write"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/onboard_church_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="24dp"
+        android:background="@color/com_smart_login_code"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="@string/onboard_church"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/design_default_color_surface"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/constr_church_reg"
+        app:layout_constraintRight_toRightOf="@id/constr_church_reg"
+        app:layout_constraintTop_toBottomOf="@id/churchdescr_text" />
+
+    <!--<Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/upl_img_test"
+        android:layout_margin="32dp"
+        android:text="@string/test_upload"
+        android:background="#FFFFFF"
+        android:textColor="#353b50"
+        android:fontFamily="@font/arbutus_slab"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/constr_church_reg"
+        app:layout_constraintRight_toRightOf="@id/constr_church_reg"
+        app:layout_constraintTop_toBottomOf="@id/onboard_church_button"
+        />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RhemaHiveViewPackage.RhemaPhoneVerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/phone_ver_frag_lab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="36dp"
+        android:gravity="center"
+        android:shadowColor="#2d000000"
+        android:shadowDy="1"
+        android:drawableLeft="@drawable/rhema_logg"
+        android:drawableStart="@drawable/rhema_logg"
+        android:shadowRadius="2"
+        app:layout_constraintBottom_toTopOf="@+id/btn_phone_ver_frag"
+        android:textColor="#353b50"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fontFamily="@font/arbutus_slab"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/phone_verification_lab"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_phone_ver_frag"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_phone_ver_frag"
+        android:background="#FFFFFF"
+        android:shadowColor="#2d000000"
+        android:shadowDy="1"
+        android:fontFamily="@font/arbutus_slab"
+        android:layout_margin="24dp"
+        android:textColor="#353b50"
+        android:textSize="14sp"
+        android:shadowRadius="2"
+        android:drawableEnd="@drawable/ic_cont_phone"
+        android:drawableRight="@drawable/ic_cont_phone"
+        android:text="@string/continue_with_phone_verification" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

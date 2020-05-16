@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="churches">
+    <item>@string/select_church</item>
+    <item>@string/coc</item>
+    <item>@string/redeem</item>
+    <item>@string/jw</item>
+    <item>@string/eckankar</item>
+    <item>@string/lord_cho</item>
+    <item>@string/catholic</item>
+    <item>@string/mfm</item>
+    <item>@string/sda</item>
+    <item>@string/anglican</item>
+    <item>@string/chrem</item>
+    <item>@string/honr</item>
+    <item>@string/winn</item>
+    </string-array>
+<string-array name="coc_branch">
+    <item>@string/branch_def</item>
+    <item>@string/coc1</item>
+    <item>@string/coc2</item>
+    <item>@string/coc3</item>
+</string-array>
+    <string-array name="redeem_branch">
+        <item>@string/branch_def</item>
+        <item>@string/redeem1</item>
+        <item>@string/redeem2</item>
+        <item>@string/redeem3</item>
+    </string-array>
+
+
+    <string-array name="honr_branch">
+        <item>@string/branch_def</item>
+        <item>@string/branch_def</item>
+        <item>@string/honr1</item>
+        <item>@string/honr2</item>
+        <item>@string/honr3</item>
+    </string-array>
+    <string-array name="winn_branch">
+        <item>@string/branch_def</item>
+        <item>@string/branch_def</item>
+        <item>@string/winn1</item>
+        <item>@string/winn2</item>
+        <item>@string/winn3</item>
+    </string-array>
+
+
+    <string-array name="jw_branch">
+        <item>@string/branch_def</item>
+        <item>@string/jw1</item>
+        <item>@string/jw2</item>
+        <item>@string/jw3</item>
+    </string-array>
+    <string-array name="eckankar_branch">
+        <item>@string/branch_def</item>
+        <item>@string/eckankar1</item>
+        <item>@string/eckankar2</item>
+        <item>@string/eckankar3</item>
+    </string-array>
+
+    <string-array name="lord_cho_branch">
+        <item>@string/branch_def</item>
+        <item>@string/lord_cho1</item>
+        <item>@string/lord_cho2</item>
+        <item>@string/lord_cho3</item>
+    </string-array>
+    <string-array name="catholic_branch">
+        <item>@string/branch_def</item>
+        <item>@string/catholic1</item>
+        <item>@string/catholic2</item>
+        <item>@string/catholic3</item>
+    </string-array>
+
+
+    <string-array name="mfm_branch">
+        <item>@string/branch_def</item>
+        <item>@string/mfm1</item>
+        <item>@string/mfm2</item>
+        <item>@string/mfm3</item>
+    </string-array>
+    <string-array name="sda_branch">
+        <item>@string/branch_def</item>
+        <item>@string/sda1</item>
+        <item>@string/sda2</item>
+        <item>@string/sda3</item>
+    </string-array>
+
+
+    <string-array name="angl_branch">
+        <item>@string/branch_def</item>
+        <item>@string/anglican1</item>
+        <item>@string/anglican2</item>
+        <item>@string/anglican3</item>
+    </string-array>
+    <string-array name="chrem_branch">
+        <item>@string/branch_def</item>
+        <item>@string/chrem1</item>
+        <item>@string/chrem2</item>
+        <item>@string/chrem3</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>@string/gend_def</item>
+        <item>@string/male</item>
+        <item>@string/female</item>
+        <item>@string/others</item>
+    </string-array>
+
+
+</resources>

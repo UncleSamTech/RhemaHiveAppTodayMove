@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id = "@+id/user_portal_scroll">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/user_portal_const_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/church_port_card_mess"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="24dp"
+                app:layout_constraintEnd_toStartOf="@id/church_port_card_news"
+                app:layout_constraintStart_toStartOf="@id/user_portal_const_lay"
+                app:layout_constraintTop_toTopOf="@id/user_portal_const_lay"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp">
+                <ImageView
+                    android:id="@+id/usr_port_img_mess"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:contentDescription="@string/action_settings"
+                    android:fontFamily="@font/arbutus_slab"
+                    android:src="@drawable/church_icon"
+
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/church_port_card_news"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+               android:layout_marginTop="8dp"
+                app:cardCornerRadius="24dp"
+                app:layout_constraintEnd_toEndOf="@id/user_portal_const_lay"
+                app:layout_constraintStart_toEndOf="@id/church_port_card_mess"
+                app:layout_constraintTop_toTopOf="@id/user_portal_const_lay"
+                android:layout_marginLeft="4dp">
+
+                <ImageView
+                    android:id="@+id/usr_port_img_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/church_icon" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/church_port_card_churches"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="24dp"
+                app:layout_constraintEnd_toStartOf="@id/church_port_card_media"
+                app:layout_constraintStart_toStartOf="@id/user_portal_const_lay"
+                app:layout_constraintTop_toBottomOf="@id/church_port_card_mess">
+
+                <ImageView
+                    android:id="@+id/usr_port_img_church"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/church_icon" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/church_port_card_media"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="24dp"
+                app:layout_constraintEnd_toEndOf="@id/user_portal_const_lay"
+                app:layout_constraintStart_toEndOf="@id/church_port_card_churches"
+                app:layout_constraintTop_toBottomOf="@id/church_port_card_news">
+
+                <ImageView
+                    android:id="@+id/usr_port_img_media"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/church_icon" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/church_port_card_subsc"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_marginTop = "8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+
+                app:cardCornerRadius="24dp"
+                app:layout_constraintBottom_toBottomOf="@id/user_portal_const_lay"
+                app:layout_constraintEnd_toStartOf="@id/church_port_card_pay"
+                app:layout_constraintStart_toStartOf="@id/user_portal_const_lay"
+                app:layout_constraintTop_toBottomOf="@id/church_port_card_churches">
+
+                <ImageView
+                    android:id="@+id/usr_port_img_subsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/church_icon" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/church_port_card_pay"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                app:cardCornerRadius="24dp"
+                app:layout_constraintBottom_toBottomOf="@id/user_portal_const_lay"
+                app:layout_constraintEnd_toEndOf="@id/user_portal_const_lay"
+                app:layout_constraintStart_toEndOf="@id/church_port_card_subsc"
+                app:layout_constraintTop_toBottomOf="@id/church_port_card_media">
+
+                <ImageView
+                    android:id="@+id/usr_port_img_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:contentDescription="@string/action_settings"
+                    android:src="@drawable/church_icon" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <!-- <fragment
+         android:id="@+id/nav_host_fragment"
+         android:name="androidx.navigation.fragment.NavHostFragment"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         app:defaultNavHost="true"
+         app:layout_constraintLeft_toLeftOf="parent"
+         app:layout_constraintRight_toRightOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:navGraph="@navigation/mobile_navigation" />-->
+
+<!--
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/colorAccent"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:foreground="?attr/selectableItemBackground"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/rhema_nav_items"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="@dimen/activity_login_margin" />
+
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />&ndash;&gt;
+
+-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
